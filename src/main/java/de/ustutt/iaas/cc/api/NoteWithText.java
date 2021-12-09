@@ -1,5 +1,7 @@
 package de.ustutt.iaas.cc.api;
 
+import java.util.Map;
+
 /**
  * A note , comprising an ID, an author, and some text.
  * 
@@ -25,6 +27,12 @@ public class NoteWithText extends Note {
 
 	public void setText(String text) {
 		this.text = text;
+	}
+
+	public Map<String, String> getHashmap() {
+		Map<String, String> map = super.getHashmap();
+		map.put("text", this.text);
+		return map;
 	}
 
 }

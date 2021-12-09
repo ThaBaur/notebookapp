@@ -116,6 +116,13 @@
 			<version>1.0.1</version>
 		</dependency>
 
+		<!-- Firebase Firestore -->
+		<dependency>
+			<groupId>com.google.firebase</groupId>
+			<artifactId>firebase-admin</artifactId>
+			<version>8.1.0</version>
+		</dependency>
+
 		<!-- API, java.xml.bind module -->
 		<dependency>
 			<groupId>javax.xml.bind</groupId>

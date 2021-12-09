@@ -1,5 +1,8 @@
 package de.ustutt.iaas.cc.api;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * A note without a text, comprising only an ID and an author.
  * 
@@ -37,4 +40,9 @@ public class Note {
 		this.author = author;
 	}
 
+	public Map<String, String> getHashmap() {
+		Map<String, String> map = new HashMap<String, String>();
+		map.put("author", this.author);
+		return map;
+	}
 }
